@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Этоксидол</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <nav class="navigation-panel">
+        <div class="navigation-desktop">
+            <div class="navigation__el">
+                <a href="#">Когнитивные функции</a>
+            </div>
+            <div class="navigation__el">
+                <a href="#">Этоксидол</a>
+            </div>
+            <div class="navigation__el">
+                <a href="#">
+                    <img src="img/icons/valenta_logo.svg" alt="" />
+                </a>
+            </div>
+            <div class="navigation__el">
+                <a href="#">Головокружение</a>
+            </div>
+            <div class="navigation__el">
+                <a href="#">Результаты исследования</a>
+            </div>
+        </div>
+        
+        <div class="navigation-mobile">
+            <div class="navigation-mobile__logo">
+                <img src="img/icons/valenta_logo_mobile.svg" alt="">
+            </div>
+            <div class="navigation-mobile__burger">
+                <img src="img/icons/burger.svg" alt="">
+            </div>
+        </div>
+    </nav>
+    <div class="main-screen">
+        <div class="main-screen__left">
+            <div class="main-screen__heading">
+                Антиоксидант нового поколения <span class="ethoxidol-name">Этоксидол</span>
+            </div>
+            <div class="main-screen__desc">
+                Обладает выраженным церебропротективным действием, дополняющим базовую
+                терапию в лечении хронической ишемии мозга.
+            </div>
+            <img src="img/ethoxidol_main_screen_mobile.png" alt="" class="mobile-element ethoxidol-main-screen-mobile">
+            <div class="button-and-warning">
+                <button class="main-screen__button">Подробнее</button>
+                <div class="main-screen__warning">
+                    Материал предназначен<br> только для сотрудников здравоохранения
+                </div>
+            </div>
+        </div>
+        <div class="main-screen__right">
+            <div class="drug-desc">
+                Оказывает антиоксидантное и церебропротективное действия для:
+            </div>
+            <div class="drug-advantages">
+                <ul>
+                    <li>Защиты клеток мозга от гибели в зоне ишемии</li>
+                    <li>Снижения неврологического дефицита</li>
+                    <li>Улучшения общего состояния пациента с ХИМ</li>
+                </ul>
+            </div>
+            <div class="drug-accordion">
+                <div class="accordion container flow">
+                    <div class="accordion__item">
+                        <h2 id="accordion__trigger-1" class="accordion__item--trigger" aria-expanded="false"
+                            aria-controls="accordion__panel-1">
+                            Антигипертензивные
+                        </h2>
+                        <div id="accordion__panel-1" class="accordion__item--panel" role="region"
+                            aria-labelledby="accordion__trigger-1">
+                            <p>
+                                Снижает артериальное давление
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion__item">
+                        <h2 id="accordion__trigger-2" class="accordion__item--trigger" aria-expanded="false"
+                            aria-controls="accordion__panel-2">
+                            Статины
+                        </h2>
+                        <div id="accordion__panel-2" class="accordion__item--panel" role="region"
+                            aria-labelledby="accordion__trigger-2">
+                            <p>
+                                Снижает содержание общего холестерина
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion__item">
+                        <h2 id="accordion__trigger-3" class="accordion__item--trigger" aria-expanded="false"
+                            aria-controls="accordion__panel-3">
+                            Сосудистые
+                        </h2>
+                        <div id="accordion__panel-3" class="accordion__item--panel" role="region"
+                            aria-labelledby="accordion__trigger-3">
+                            <p>
+                                Улучшает мозговое кровооращение
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
