@@ -164,6 +164,7 @@ ul {
   transition: height 400ms ease-in-out, opacity 350ms linear;
   display: flex;
   align-items: center;
+  color: #C9D3ED;
 }
 .accordion__item--panel > p {
   margin: 0;
