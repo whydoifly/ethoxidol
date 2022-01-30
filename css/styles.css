@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Mulish", sans-serif;
+  background-color: #11153a;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  line-height: 1.6;
+}
+
+.container-fluid {
+  padding: 0 !important;
+}
+
+.outside-container {
+  background-image: url(/img/Картинка.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position-y: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+.custom-container {
+  margin: 100px 64px 0px 64px;
+}
+
+.main-screen__heading {
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 59px;
+}
+
+.ethoxidol-name {
+  background: -webkit-linear-gradient(89.5deg, #7FFFA3 -17.74%, #00C938 101.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-screen__desc {
+  margin-top: 34px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.main-screen__action {
+  margin-top: 40px;
+}
+
+.more-btn {
+  background: linear-gradient(89.5deg, #7FFFA3 -17.74%, #00C938 101.46%);
+  border-radius: 8px;
+  padding: 19px 45px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.small-info {
+  font-size: 14px;
+  font-weight: 400;
+  color: #4B4F70;
+}
+
+.details__heading {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.details__list {
+  margin-top: 14px;
+  color: #C9D3ED;
+  font-size: 16px;
+  font-weight: 300;
+  margin-left: 20px;
+}
+
+/* ======================== */
+/* Accordion Styles         */
+/* ======================== */
+
+.accordion {
+  margin: 76px auto 0px auto;
+  max-width: 600px;
+}
+
+/* Accordion Trigger */
+.accordion__item--trigger {
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.125rem;
+  margin: 0;
+  padding-top: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #8b91a2;
+}
+.accordion__item--trigger::after {
+  content: "+";
+  font-weight: 700;
+  font-size: 1.5rem;
+  display: block;
+  margin-left: 0.75rem;
+}
+.accordion__item--trigger[aria-expanded="true"]::after {
+  content: "-";
+}
+
+/* Accordion Panel */
+.accordion__item--panel {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: height 400ms ease-in-out, opacity 350ms linear;
+  display: flex;
+  align-items: center;
+}
+.accordion__item--panel > p {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+.accordion__item--trigger[aria-expanded="true"] + .accordion__item--panel {
+  height: 30px;
+  opacity: 1;
+}
+
+.efficiency {
+  margin-top: 160px;
+}
+
+.efficiency__results {
+  font-size: 18px;
+  font-weight: 800;
+  background: -webkit-linear-gradient(89.5deg, #7FFFA3 -17.74%, #00C938 101.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.efficiency__heading {
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 55px;
+}
+
+.efficiency-graph {
+  margin-top: 42px;
+  height: 100vh;
+  background-image: url(/img/graph.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-y: top;
+}
