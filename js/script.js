@@ -1,3 +1,4 @@
+// Функционал аккордеона
 const accordionTriggers = document.querySelectorAll('.accordion__item--trigger');
 const accordionPanels = document.querySelectorAll('.accordion__item--panel');
 
@@ -33,3 +34,18 @@ function collapseAllAccordions() {
     });
     
 }
+
+
+// Функционал бургер-меню
+let burgerImg = document.querySelector('.mobile-burger-img');
+let mobileMenu = document.querySelector('.mobile-menu');
+
+burgerImg.addEventListener('click', () => {
+    if (mobileMenu.style.display !== 'block') {
+        mobileMenu.style.display = 'block';
+        burgerImg.src = '/img/icons/burger-cross.svg';
+    } else {
+        mobileMenu.style.display = 'none';
+        burgerImg.src = '/img/icons/burger.svg';
+    }
+});

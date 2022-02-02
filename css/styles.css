@@ -12,7 +12,6 @@ body,
 html {
   width: 100%;
   height: 100%;
-  line-height: 1.6;
 }
 
 .container-fluid {
@@ -20,18 +19,32 @@ html {
 }
 
 .outside-container {
-  background-image: url(/img/Картинка.png);
+  background-image: url(/img/Картинка.png), url(/img/circle-main.png), url(/img/green-circle-2.png), url(/img/circle-blue-third.png), url(/img/circle-little-green.png), url(/img/efficiency-bg-circle.png);
   background-repeat: no-repeat;
-  background-position: left;
-  background-position-y: inherit;
+  background-position: left, right, right, right, left, left;
+  background-position-y: 0, 0, 740px, 1960px, 1880px, 2730px;
 }
 
 a {
   text-decoration: none;
 }
 
-ul {
+a:hover {
+  text-decoration: none;
+}
+
+ul,
+ol {
   padding: 0;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 .custom-container {
@@ -66,6 +79,11 @@ ul {
   padding: 19px 45px;
   font-size: 18px;
   font-weight: 700;
+  color: #fff;
+}
+
+.more-btn:hover {
+  color: #fff;
 }
 
 .small-info {
@@ -139,7 +157,7 @@ ul {
 }
 
 .efficiency {
-  margin-top: 160px;
+  margin-top: 170px;
 }
 
 .efficiency__results {
@@ -157,9 +175,806 @@ ul {
 
 .efficiency-graph {
   margin-top: 42px;
-  height: 100vh;
   background-image: url(/img/graph.png);
   background-position: center;
   background-repeat: no-repeat;
   background-position-y: top;
+  font-size: 18px;
+  font-weight: 400;
 }
+
+.patients-after-covid,
+.patients-after-vacc {
+  display: block;
+}
+
+.patients-after-vacc {
+  margin-top: 14px;
+}
+
+.efficiency-data__left,
+.efficiency-data__right {
+  margin-top: 45px;
+}
+
+.efficiency-data__right,
+.efficiency-data__p_1 {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.efficiency-data__p_2 {
+  margin-top: 115px;
+}
+
+.stop-headstars {
+  position: absolute;
+  left: 38px;
+  bottom: 11px;
+}
+
+.bogolepova-research {
+  position: absolute;
+  top: 170px;
+  left: 39px;
+}
+
+.percentage {
+  font-size: 82px;
+  font-weight: 800;
+  position: relative;
+  bottom: 18px;
+}
+
+.percentage__percent {
+  font-size: 42px;
+  font-weight: 900;
+  position: relative;
+  bottom: 27px;
+}
+
+.percentage__smaller {
+  font-size: 24px;
+  position: relative;
+  bottom: 90px;
+}
+
+.percentage,
+.percentage__percent,
+.percentage__smaller,
+.mobile-percent,
+.mobile-percent-number,
+.mobile-percent__word,
+.mobile-expert__upheading_green {
+  background: -webkit-linear-gradient(89.5deg, #7FFFA3 -17.74%, #00C938 101.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.therapy-quality {
+  margin-top: 145px;
+}
+
+.cognitive-functions {
+  height: 50vh;
+  background-image: url(/img/cognitive_functions.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-position-y: 0;
+}
+
+.ear-noise {
+  height: 50vh;
+  background-image: url(/img/ear_noise.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-position-y: 0;
+}
+
+.cognitive-improvements {
+  position: absolute;
+  left: 503px;
+  line-height: 1;
+  top: 15px;
+}
+
+.cognitive-points__prep,
+.cognitive-points__word {
+  font-size: 24px;
+  font-weight: 800;
+}
+.cognitive-points__number {
+  font-size: 82px;
+  font-weight: 800;
+}
+
+.cognitive-points__number,
+.cognitive-points__prep,
+.cognitive-points__word {
+  background: -webkit-linear-gradient(89.5deg, #20D7FF
+  -17.74%, #00239E
+  101.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cognitive-improvements_2,
+.cognitive-improvements_3 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.cognitive-improvements_2 {
+  top: 160px;
+}
+
+.cognitive-improvements_3 {
+  top: 300px;
+}
+
+.cognitive-improvements_small {
+  font-size: 14px;
+  font-weight: 400;
+  color: #8F93B3;
+  margin-top: 350px;
+}
+
+.ear-noise-percentage {
+  position: absolute;
+  right: 340px;
+  top: 147px;
+}
+
+.ear-noise_p {
+  position: absolute;
+  top: 290px;
+  right: 290px;
+}
+
+.asthenia {
+  height: 50vh;
+  background-image: url(/img/asthenia.png);
+  background-repeat: no-repeat;
+}
+
+.balance-loss {
+  height: 50vh;
+  background-image: url(/img/loose-balance.png);
+  background-repeat: no-repeat;
+}
+
+.asthenia-prep,
+.asthenia-percent,
+.asthenia-number {
+  background: -webkit-linear-gradient(89.5deg, #7FFFA3 -17.74%, #00C938 101.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.asthenia-prep {
+  font-size: 24px;
+  font-weight: 800;
+  position: relative;
+  bottom: 45px;
+}
+
+.asthenia-number {
+  font-size: 82px;
+  font-weight: 800;
+}
+
+.asthenia-percent {
+  font-size: 42px;
+  font-weight: 900;
+  position: relative;
+  bottom: 29px;
+}
+
+.asthenia__info {
+  margin-top: 204px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.balance-loss__info {
+  position: absolute;
+  top: 291px;
+  left: 357px;
+}
+
+.balance-number,
+.balance-percent,
+.balance-patients {
+  background: -webkit-linear-gradient(89.5deg, #20D7FF
+  -17.74%, #00239E
+  101.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.balance-loss__stats {
+  line-height: 1;
+  position: absolute;
+  left: 355px;
+  top: 175px;
+}
+
+.balance-number {
+  font-size: 82px;
+  font-weight: 800;
+}
+.balance-percent {
+  font-size: 42px;
+  font-weight: 900;
+}
+.balance-patients {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.therapy-efficiency {
+  margin-top: 200px;
+}
+
+
+.therapy-efficiency__upheading {
+  background: -webkit-linear-gradient(89.5deg, #20D7FF
+  -17.74%, #00239E
+  101.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.therapy-efficiency__heading {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 55px;
+}
+
+.therapy-efficiency__info {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.use-indication {
+  margin-top: 130px;
+}
+
+.use-indication__upheading {
+  background: -webkit-linear-gradient(89.5deg, #7FFFA3 -17.74%, #00C938 101.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 18px;
+  font-weight: 800;
+}
+.use-indication__heading {
+  font-size: 62px;
+  font-weight: 800;
+  line-height: 62px;
+  margin-top: 18px;
+}
+
+.use-indication__btn {
+  margin-top: 67px;
+}
+
+.way-to-use {
+  margin: -180px 64px 0 64px;
+}
+
+.multiple-boxes-img {
+  width: 100%;
+}
+
+.way-to-use__heading {
+  font-size: 46px;
+  font-weight: 700;
+}
+
+.way-to-use__longevity {
+  margin-top: 32px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.way-to-use__dose {
+  border-bottom: 1px solid #2D3263;
+  padding-bottom: 17px;
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 16px;
+}
+.way-to-use__pack {
+  color: #8F93B3;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+.way-to-use-3 {
+  margin-left: 100px;
+}
+
+.therapy-course__block {
+  display: flex;
+  margin-top: 150px;
+}
+
+.syringe-text {
+  margin: 0 0 0 14px;
+  font-size: 18px;
+}
+
+.big-plus {
+  font-size: 46px;
+  font-weight: 700;
+  position: absolute;
+  left: 24%;
+}
+
+.read-list {
+  color: #8F93B3;
+}
+
+.read-list__heading {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.read-list__text {
+  font-weight: 400;
+  margin-top: 12px;
+}
+
+.only-for-doctors {
+  color: #8F93B3;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-top: 1px solid #2D3263;
+  padding: 11px 0 13px 0;
+}
+
+.footer-container {
+  margin: 26px 64px 50px 64px;
+}
+
+footer {
+  border-top: 1px solid #2D3263;
+  margin-top: 124px;
+}
+
+/* Мобильная версия */
+.mobile-container {
+  margin: 0 16px;
+}
+
+.mobile-nav {
+  padding: 4px 16px 6px 16px;
+  border-bottom: 1px solid #8B91A2;
+}
+
+.mobile-menu {
+  background-color: #11153A;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 32px 16px;
+  display: none;
+}
+
+.mobile-menu__links {
+  list-style: none;
+}
+
+.mobile-menu__link {
+  margin-bottom: 24px;
+}
+
+.mobile-menu__link_a {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.mobile-main-screen {
+  margin-top: 24px;
+}
+
+.mobile-main-screen__heading {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.mobile-main-screen__text {
+  margin-top: 8px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.ethoxidol-main-screen-mobile-img {
+  width: 100%;
+  margin: -115px 0;
+}
+
+.mobile-more-info-btn {
+  padding: 15px 100px;
+  background: -webkit-linear-gradient(89.5deg, #7FFFA3 -17.74%, #00C938 101.46%);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.mobile-small-info {
+  color: #4B4F70;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 18px;
+}
+
+.mobile-effect {
+  margin-top: 32px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.mobile-effect__list {
+  color: #C9D3ED;
+  font-weight: 300;
+  font-size: 13px;
+  margin-left: 17px;
+  margin-top: 14px;
+}
+
+.mobile-people-cubes {
+  width: 100%;
+}
+
+.mobile-research__upheading {
+  background: -webkit-linear-gradient(89.5deg, #7FFFA3 -17.74%, #00C938 101.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.mobile-research__heading {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32px;
+  margin-top: 8px;
+}
+
+.dizzyness-graph {
+  margin-top: 32px;
+}
+
+.dizzyness-stat-img {
+  margin-left: -16px;
+}
+
+.dizzyness-stop {
+  margin-left: 14px;
+}
+
+.mobile-percent-number {
+  font-size: 67px;
+  font-weight: 800;
+}
+
+.mobile-percent {
+  font-size: 34px;
+  font-weight: 900;
+  position: relative;
+  bottom: 23px;
+}
+
+.mobile-percent__word {
+  font-weight: 800;
+  font-size: 15px;
+  position: relative;
+  bottom: 22px;
+}
+
+.mobile-research__infos {
+  margin-top: 30px;
+}
+
+.mobile-research__info {
+  margin-top: 15px;
+}
+
+.mobile-research__info,
+.mobile-research__info_covid {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.mobile-research__info_covid {
+  font-weight: 800;
+  margin-top: 15px;
+}
+
+
+.mobile-cognitive-img {
+  margin-left: -16px;
+  margin-top: 72px;
+}
+
+.mobile-cognitive-prep,
+.mobile-cognitive-points,
+.mobile-cognitive-word {
+  background: -webkit-linear-gradient(89.5deg, #20D7FF
+  -17.74%, #00239E
+  101.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mobile-cognitive__points {
+  margin-top: 36px;
+}
+
+.mobile-cognitive__points_points {
+  line-height: 1;
+}
+
+.mobile-cognitive__points_text {
+  margin-left: 14px;
+}
+
+.mobile-cognitive-prep,
+.mobile-cognitive-word {
+  font-size: 15px;
+  font-weight: 800;
+}
+.mobile-cognitive-points {
+  font-size: 67px;
+  font-weight: 800;
+}
+
+.mobile-cognitive__text {
+  margin-top: 16px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.mobile-cognitive__small-text {
+  font-size: 13px;
+  font-weight: 400;
+  color: #8F93B3;
+  margin-top: 16px;
+}
+
+.mobile-ear-noise {
+  margin-top: 72px;
+}
+
+.ear-noise-mobile-img {
+  margin-right: -16px;
+}
+
+.mobile-ear-noise-stop {
+  margin-top: -20px;
+}
+
+.mobile-balance-loss {
+  margin-top: 72px;
+}
+
+.mobile-balance-loss-img {
+  margin-left: -16px;
+}
+
+.balance-loss-percents {
+  margin-left: 20px;
+}
+
+.balance-loss-stop {
+  margin-top: -15px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.mobile-percent-number-blue,
+.mobile-percent-blue,
+.mobile-percent__word_blue,
+.mobile-proved__upheading,
+.mobile-doses-blue-text,
+.mobile-expert__upheading_blue {
+  background: -webkit-linear-gradient(89.5deg, #20D7FF
+  -17.74%, #00239E
+  101.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mobile-proved {
+  margin-top: 72px;
+}
+.mobile-proved__upheading {
+  font-size: 15px;
+  font-weight: 800;
+}
+.mobile-proved__heading {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32px;
+}
+.mobile-proved__text {
+  margin-top: 24px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.mobile-diagrams {
+  margin-top: 40px;
+}
+
+.mobile-doses {
+  margin-top: 72px;
+}
+
+.mobile-doses__upheading {
+  font-size: 15px;
+  font-weight: 800;
+  background: -webkit-linear-gradient(89.5deg, #7FFFA3 -17.74%, #00C938 101.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mobile-doses__heading {
+  margin-top: 8px;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 32px;
+}
+.mobile-doses__btn {
+  margin-top: 56px;
+}
+
+.mobile-doses__btn_link {
+  border: 1px solid #252C6B;
+  background: radial-gradient(52.94% 48.33% at 51.96% 42.97%, #252C6B 0%, #181D48 100%);
+  padding: 16px 46px;
+  border-radius: 1000px;
+  border: 2px solid skyblue;
+  border-image: linear-gradient(to right top, #252C6B, #181D48, blue);
+  border-image-slice: 1;
+}
+
+.mobile-doses-blue-text {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.multiple-boxes-mobile-img {
+  width: 100%;
+  margin-top: -105px;
+  margin-bottom: -135px;
+}
+
+.mobile-way-to-use__heading {
+  font-size: 28px;
+  font-weight: 700;
+}
+.mobile-way-to-use__longevity {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 24px;
+}
+.mobile-way-to-use__dose {
+  margin-top: 8px;
+  font-size: 15px;
+  font-weight: 400;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #2D3263;
+}
+.mobile-way-to-use__pack {
+  padding-top: 6px;
+  color: #8F93B3;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.mobile-tablets-one-img {
+  width: 100%;
+  margin-bottom: -160px;
+  margin-top: 20px;
+}
+
+.mobile-no-injection {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.mobile-no-injection__text {
+  margin-left: 14px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.mobile-expert {
+  margin-top: 72px;
+}
+.mobile-expert__heading {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 32px;
+}
+
+.mobile-expert__video {
+}
+
+.mobile-expert__upheading {
+  margin-top: 32px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.mobile-expert__author {
+  font-size: 18px;
+  font-weight: 800;
+  margin-top: 18px;
+}
+
+.mobile-expert__text {
+  margin-top: 8px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.mobile-expert__btn {
+  margin-top: 35px;
+}
+
+.mobile-expert-btn__link {
+  background: linear-gradient(89.5deg, #7FFFA3 -17.74%, #00C938 101.46%);
+  border-radius: 8px;
+  color: #fff;
+  padding: 15px 92px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.mobile-expert-btn__link:focus {
+  color: #fff;
+}
+
+/* Конец стилей мобильной версии */
+
+
+@media (max-width: 991px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .accordion {
+    margin-top: 24px;
+  }
+
+  .footer-container {
+    margin: 24px 16px;
+  }
+}
+
+
+/* Регулировка плюса в таблетках и инъекциях */
+
+@media (max-width: 1600px) {
+  .big-plus {
+    left: 27%;
+  }
+}
+
+/* Регулировка плюса в таблетках и инъекциях */
