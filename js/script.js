@@ -39,6 +39,7 @@ function collapseAllAccordions() {
 // Функционал бургер-меню
 let burgerImg = document.querySelector('.mobile-burger-img');
 let mobileMenu = document.querySelector('.mobile-menu');
+let mobileMenuLinks = document.querySelectorAll('.mobile-menu__link_a');
 
 burgerImg.addEventListener('click', () => {
     if (mobileMenu.style.display !== 'block') {
@@ -49,3 +50,10 @@ burgerImg.addEventListener('click', () => {
         burgerImg.src = '/img/icons/burger.svg';
     }
 });
+
+for (let link of mobileMenuLinks) {
+    link.addEventListener('click', () => {
+        mobileMenu.style.display = 'none';
+        burgerImg.src = '/img/icons/burger.svg';
+    })
+}

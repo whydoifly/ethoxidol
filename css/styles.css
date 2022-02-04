@@ -8,6 +8,10 @@ body {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body,
 html {
   width: 100%;
@@ -639,6 +643,10 @@ footer {
   font-weight: 400;
 }
 
+.mobile-menu__link_a:active {
+  color: #fff;
+}
+
 .mobile-main-screen {
   margin-top: 24px;
 }
@@ -667,6 +675,10 @@ footer {
   color: #fff;
   font-size: 15px;
   font-weight: 700;
+}
+
+.mobile-more-info-btn:active {
+  color: #fff;
 }
 
 .mobile-small-info {
