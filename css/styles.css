@@ -239,7 +239,7 @@ ol {
 
 .bogolepova-research {
   position: absolute;
-  top: 170px;
+  top: 204px;
   left: 39px;
 }
 
@@ -297,7 +297,7 @@ ol {
 
 .cognitive-improvements {
   position: absolute;
-  left: 503px;
+  left: 545px;
   line-height: 1;
   top: 15px;
 }
@@ -1082,5 +1082,11 @@ footer {
   .read-list__text,
   .only-for-doctors {
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .small-info__block br {
+    display: none;
   }
 }
