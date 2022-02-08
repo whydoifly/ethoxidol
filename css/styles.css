@@ -26,7 +26,7 @@ html {
   background-image: url(/img/Картинка.png), url(/img/circle-main.png), url(/img/green-circle-2.png), url(/img/circle-blue-third.png), url(/img/circle-little-green.png), url(/img/efficiency-bg-circle.png), url(/img/last-bg-circle.png);
   background-repeat: no-repeat;
   background-position: left, right, right, right, left, left, right;
-  background-position-y: 0, 0, 540px, 1760px, 1680px, 2400px, 4350px;
+  background-position-y: -100px, 0, 540px, 1760px, 1680px, 2400px, 4350px;
 }
 
 a {
