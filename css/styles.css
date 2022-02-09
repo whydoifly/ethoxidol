@@ -1090,3 +1090,12 @@ footer {
     display: none;
   }
 }
+
+@media (max-width: 1350px) {
+  .ear-noise,
+  .cognitive-functions {
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+}
