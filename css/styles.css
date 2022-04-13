@@ -399,10 +399,10 @@ ol {
 }
 
 .asthenia__info {
-  margin-top: 204px;
+  margin-top: 217px;
   font-size: 18px;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 24px;
 }
 
 .balance-loss__info {
@@ -1057,6 +1057,99 @@ footer {
 
 /* Конец стилей мобильной версии */
 
+/* Стили модального окна */
+.modal-footer,
+.modal-header {
+  border: none;
+}
+
+.modal-header {
+  justify-content: flex-end;
+}
+
+.modal-footer {
+  justify-content: flex-start;
+  padding: 0px;
+}
+
+.modal-content {
+  background-color: #11153A;
+  border-image-source: linear-gradient(89.5deg, #20D7FF
+  -17.74%, #00239E
+  101.46%);
+  border-image-slice: 1;
+  border-width: 2px;
+  padding: 87px 65px;
+}
+
+.modal-message {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.modal-message p {
+  line-height: 33px;
+}
+
+.confirm-modal,
+.reject-modal {
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.confirm-modal {
+  margin-right: 24px !important;
+}
+
+.close-modal-icon {
+  cursor: pointer;
+}
+
+.modal {
+  backdrop-filter: blur(4px);
+  padding-top: 140px;
+}
+
+.modal.fade .modal-dialog {
+  max-width: 640px;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 39px 17px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .modal-message {
+    font-size: 16px;
+    line-height: 17px;
+  }
+
+  .modal-message p {
+    line-height: 17px;
+  }
+
+  .confirm-modal,
+  .confirm-modal img,
+  .reject-modal,
+  .reject-modal img {
+    width: 120px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 360px) {
+  .confirm-modal,
+  .confirm-modal img,
+  .reject-modal,
+  .reject-modal img {
+    width: 100px;
+  }
+}
 
 @media (max-width: 991px) {
   .desktop-only {

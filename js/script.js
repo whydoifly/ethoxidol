@@ -61,3 +61,23 @@ for (let link of mobileMenuLinks) {
         docBody.style.overflow = 'visible';
     })
 }
+
+// Модальное окно с подтверждением специалиста здравоохранения
+document.addEventListener('DOMContentLoaded', () => {
+    let modal = document.querySelector('.modal');
+    let confirmModalBtn = document.querySelector('.confirm-modal');
+
+    docBody.classList.add('modal-open');
+    modal.classList.add('show');
+    modal.style.display = 'block';
+
+    confirmModalBtn.addEventListener('click', () => {
+        docBody.classList.remove('modal-open');
+        modal.classList.remove('show');
+        modal.style.display = 'none';
+    })
+});
+
+// docBody.classList.remove('modal-open');
+//     modal.classList.remove('show');
+//     modal.style.display = 'none';
