@@ -22,6 +22,16 @@ html {
   padding: 0 !important;
 }
 
+.disclaimer {
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  background-color: #11153a;
+}
+
 .outside-container {
   background-image: url(/img/Картинка.png), url(/img/circle-main.png), url(/img/green-circle-2.png), url(/img/circle-blue-third.png), url(/img/circle-little-green.png), url(/img/efficiency-bg-circle.png), url(/img/last-bg-circle.png);
   background-repeat: no-repeat;
@@ -1140,6 +1150,10 @@ footer {
   .reject-modal,
   .reject-modal img {
     width: 120px;
+  }
+
+  .disclaimer {
+    font-size: 12px;
   }
 }
 
