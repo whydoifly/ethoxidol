@@ -1110,7 +1110,8 @@ footer {
 }
 
 .modal {
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(10px);
+  --webkit-backdrop-filter: blur(10px);
   padding-top: 140px;
 }
 
